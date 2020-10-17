@@ -20,6 +20,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ################################################################################
 
+LINE_MONITOR_REPO="$HOME/git/line_monitor"
+
 
 #
 # Print help info when asked to or when `command` is invalid
@@ -39,7 +41,7 @@ function _usage() {
 function _run() {
     docker run \
         -d \
-        -v "$HOME/git/line_monitor/app:/usr/src/app" \
+        -v "$LINE_MONITOR_REPO/app:/usr/src/app" \
         -e TARGET_HOST="$TARGET_HOST" \
         --rm \
         --name line_monitor \
