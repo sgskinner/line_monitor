@@ -1,0 +1,6 @@
+[flake8]
+max-line-length = 120
+ignore =
+    C0114, # missing-module-docstring
+    C0116, # missing-function-docstring
+
