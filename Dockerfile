@@ -10,4 +10,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Uncomment for building images that will be pushed to repo
 # COPY app/ /usr/src/app
 
-CMD [ "/bin/bash" ]
+CMD [ "./scripts/line_monitor.py" ]

@@ -38,8 +38,10 @@ function _usage() {
 #
 function _run() {
     docker run \
-        -it \
-        -v "$HOME/git/python-sandbox:/usr/src/app" \
+        -d \
+        -v "$HOME/git/line_monitor/app:/usr/src/app" \
+        -e TARGET_HOST="$TARGET_HOST" \
+        --rm \
         --name line_monitor \
         sgskinner/line_monitor:latest
 }

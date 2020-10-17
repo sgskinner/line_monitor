@@ -27,8 +27,8 @@ PING_INTERVAL_MINUTES = 10
 TIMEOUT = 5
 LOG = logging.getLogger()
 LOG_LEVEL = logging.INFO
-LOG_FILE = '../logs/line-monitor.log'
-REPORT_FILE = '../reports/line-monitor.csv'
+LOG_FILE = './logs/line-monitor.log'
+REPORT_FILE = './reports/line-monitor.csv'
 HEADER = 'datetime,ip,rtt_millis'
 
 
